@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: green;
+}
+#wrapper {
+	width: 90%;
+	margin: auto;
+}
+header, nav, main, footer {
+    display: block;
+}
+header {
+	text-align: center;
+}
+h1 {
+	font-size: 4.5em;
+	margin: auto;
+}
+nav {
+	text-align: center;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+nav li {
+	display: inline;
+	margin: 10px;
+	font-size: 1.5em;
+}
+nav a:link { color: black; }
+nav a:visited { color: black; }
+nav a:hover { 
+	color: white;
+	background-color: green;
+}
+nav a.active {
+	border-bottom: 3px solid green;
+}
+nav a {
+	display: inline-block;
+	width: 100px;
+}
+main {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.float-50 {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+.float-70 {
+	float: left;
+	width: 70%;
+	padding: 15px;
+}
+.float-30 {
+	float: left;
+	width: 30%;
+	padding: 15px;
+}
+.clear-children:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.img-full {
+	width:100%;
+}
+.large-font {
+	font-size: 2em;
+}
+table, th, td {
+	border: 1px solid darkgray;
+}
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+th {
+	width: 20%;
+	height: 100px;
+	background-color: #ecebeb;
+}
+table td li {
+	text-align: left;
+	padding: 2px;
+}
+footer {
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 3px solid green;
+	display: block;
+}
+footer a:link { color: green; }
+footer a:visited { color: green; }
+footer a:hover { color: green; }
+#contact {
+	display: inline-block;
+	text-align: left;
+	margin-right: 2em;
+}
+#social {
+	display: inline-block;
+	
+}
+@media only screen and (max-width: 767px) {
+		h1 {
+			font-size: 3em;
+		}
+		nav {
+	        margin: .5em;
+
+	    }
+	    nav a {
+	        display: block;
+	        padding: 2px;
+	        width: auto;
+	        border-bottom: 1px solid green;
+	    }
+	    nav li {
+	        display: block;
+	    }
+	    nav li {
+			margin: 0;
+			font-size: 1em;
+		}
+		.float-50 {
+			width: 100%;
+		}
+		.float-70 {
+			width: 100%;
+		}
+		.float-30 {
+			width: 100%;
+		}
+}
